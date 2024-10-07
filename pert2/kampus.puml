@@ -4,6 +4,7 @@
 actor mahasiswa as mhs
 actor dosen as dosen
 actor admin as admin
+actor baswedan as bsw
 
 package kelas{
     usecase "menerima jadwal perkuliahan" as U1
