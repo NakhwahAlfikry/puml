@@ -15,9 +15,9 @@ package kelas{
 } 
 
 
-mhs --> U1
 mhs  --> U3
+U3 ..> U1 : include
 dosen --> U2
 admin --> U4
-admin --> U5
-admin --> U6
+U4 ..> U5 : extend
+U4 ..> U6 : extend
