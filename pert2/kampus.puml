@@ -12,12 +12,16 @@ package kelas{
     usecase "manage course" as U4
     usecase "add course" as U5
     usecase "remove course" as U6
+    usecase "belajar" as U7
 } 
 
 
 mhs  --> U3
 U3 ..> U1 : include
-dosen --> U2
+dosen --> U1
 admin --> U4
 U4 ..> U5 : extend
 U4 ..> U6 : extend
+U1 --> U7 : mahasiswa
+U1 --> U2 : dosen
+U5 ..> U3 : include
